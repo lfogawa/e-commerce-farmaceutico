@@ -5,9 +5,13 @@
   font-family: 'Comfortaa', cursive;
 }
 
+/* Body geral */
+
 body {
   padding-top: 75px;
 }
+
+/* Nav geral */
 
 nav {
   display: flex;
@@ -30,22 +34,22 @@ nav {
   z-index: 1;
 }
 
-nav > a {
+nav > .linksNav {
   text-decoration: none;
 }
 
-nav > a:visited {
+nav > .linksNav:visited {
   text-decoration: none;
   color: #000000;
 }
 
-a {
+.linksNav {
   transform: scale(1);
   transition-duration: 1s;
 }
 
-a:hover {
-  text-decoration: underline;
+.linksNav:hover {
+  border-bottom: 1px solid;
   transform: scale(1.05);
   transition-duration: 1s;
 }
@@ -56,6 +60,8 @@ a:hover {
   height: 20vh;
   min-height: 200px;
 }
+
+/* Título geral */
 
 .titulo {
   padding: 3%;
@@ -70,6 +76,7 @@ a:hover {
   border-right: none;
 }
 
+/* Footer geral */
 
 footer {
   text-align: center;
@@ -101,15 +108,17 @@ footer {
   color: #000000;
 }
 
-.linksFooter > a {
+.linkFooter {
   text-decoration: none;
 }
 
-.linksFooter > a:hover {
-  text-decoration: underline;
+.linkFooter:hover {
+  border-bottom: 1px solid;
+  transform: scale(1.05);
+  transition-duration: 1s;
 }
 
-.linksFooter > a:visited {
+.linkFooter:visited {
   text-decoration: none;
   color: #000000;
 }
