@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Comfortaa', cursive;
+}
+
+body {
+  padding-top: 75px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 75px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #dadada;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+nav > a {
+  text-decoration: none;
+}
+
+nav > a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+a {
+  transform: scale(1);
+  transition-duration: 1s;
+}
+
+a:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
+  transition-duration: 1s;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  height: 20vh;
+  min-height: 200px;
+}
+
+.titulo {
+  padding: 3%;
+  text-align: left;
+  color: #5CB835;
+  font-size: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #dadada;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 5%;
+  padding-top: 2%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #f8f8f8;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  background-color: #dddddd;
+}
+
+.mapa {
+  margin: 20px;
+  height: 350px;
+  width: 350px;
+  border: none;
+  border-radius: 10px;
+}
+
+.linksFooter {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.linksFooter > a {
+  text-decoration: none;
+}
+
+.linksFooter > a:hover {
+  text-decoration: underline;
+}
+
+.linksFooter > a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+.logoFooter {
+  height: 150px;
+  align-items: center;
+}
+
+/* "Início" e "Todos os remédios" */
+
+.banner {
+  display: block;
+  width: 100%;
+  height: 25vw;
+  max-height: 400px;
+  object-fit: cover;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.fa-regular, .fa-heart {
+  color: #000000;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  transform: scale(1);
+  transition-duration: 0.5s;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.lista {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+
+.cartao {
+  margin: 10%;
+  padding: 5px;
+  height: auto;
+  border-radius: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #e7ffdc;
+  box-shadow: 10px 10px 15px 6px rgba(0,0,0,0.2);
+}
+
+.remedio {
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.produto {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.valor {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.botao {
+  margin: 5%;
+  padding: 10px;
+  border-style: solid;
+  border-color: #5CB835;
+  border-width: 2px;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  transform: scale(1);
+  transition-duration: 0.5s;
+  background-color: #ffffff;
+  box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.2);
+}
+
+.botao:hover {
+  transform: scale(1.05);
+  background-color: #f0f0f0;
+  transition-duration: 0.5s;
+}
+
+/* "Sobre nós" */
+
+.sobre {
+  padding: 3%;
+  text-align: justify;
+}
+
+.retratos {
+  display: grid;
+  grid-template-columns: 250px 250px;
+  justify-content: center;
+}
+
+.retrato {
+  width: 250px;
+  height: 250px;
+}
+
+.redesSociais {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.redeSocial {
+  width: 50px;
+}
+
+/* "Fale conosco" */
+
+.formulario {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 3%;
+  text-align: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #e7ffdc;
+  box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.2);
+}
+
+.labelGeral {
+  padding-top: 35px;
+  padding-bottom: 15px;
+  display: block;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+input, #assunto, #mensagem {
+  padding: 10px;
+  width: 250px;
+  max-width: 250px;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+}
+
+#mensagem {
+  height: 200px;
+  margin-bottom: 25px;
+}
