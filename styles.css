@@ -233,6 +233,13 @@ footer {
 
 .redeSocial {
   width: 50px;
+  transform: scale(1);
+  transition-duration: 1s;
+}
+
+.redeSocial:hover {
+  transform: scale(1.15);
+  transition-duration: 1s;
 }
 
 /* "Fale conosco" */
